@@ -4,9 +4,11 @@ using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
 using eFolder.Todo.Backup;
+using Microsoft.Practices.Unity;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using Unity.WebApi;
 
 namespace eFolder.Todo
 {
@@ -26,7 +28,14 @@ namespace eFolder.Todo
       settings.Converters.Add(new StringEnumConverter());
       settings.Converters.Add(new IsoDateTimeConverter());
       config.Formatters.Remove(config.Formatters.XmlFormatter);
-      
+
+      //var container = new UnityContainer();
+      //container.RegisterType<IBackupService, BackupService>(new HierarchicalLifetimeManager());
+      ////config.DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+      //config.DependencyResolver = new UnityDependencyResolver(container);
+
+      UnityConfig.RegisterComponents(config);
+
       // Web API routes
       config.MapHttpAttributeRoutes();
 

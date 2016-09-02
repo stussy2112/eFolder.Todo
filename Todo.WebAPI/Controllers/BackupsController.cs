@@ -3,11 +3,11 @@ using eFolder.Todo.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Net.Http;
-using System.Net;
 
 // namespaces...
 namespace eFolder.Todo.Controllers
@@ -20,13 +20,7 @@ namespace eFolder.Todo.Controllers
     /// Initializes a new instance of the <see cref="BackupsController"/> class.
     /// </summary>
     private readonly IBackupService _backupService;
-
-    public BackupsController()
-      : this(new BackupService())
-    {
-    }
-
-    // TODO: Wire up Unity injection
+    // public constructors...
     public BackupsController(IBackupService backupService)
     {
       _backupService = backupService;
@@ -54,8 +48,8 @@ namespace eFolder.Todo.Controllers
         }
       }
       // TODO: set a file name header on the response
-      rtnVal = ResponseMessage(new HttpResponseMessage(HttpStatusCode.OK) { Content = new StringContent(sb.ToString(), Encoding.UTF8, "text/csv"), RequestMessage = Request });
-      
+      rtnVal = ResponseMessage(new HttpResponseMessage(HttpStatusCode.OK) { Content = new StringContent(sb.ToString(), Encoding.UTF8, "text/csv"), RequestMessage = Request
+      });
       return rtnVal;
     }
 
@@ -68,7 +62,6 @@ namespace eFolder.Todo.Controllers
       rtnVal = Ok(backups);
       return rtnVal;
     }
-
 
     //[Route("backups")]
     //public IHttpActionResult Post()
@@ -92,7 +85,6 @@ namespace eFolder.Todo.Controllers
         BackupId = id
       };
       rtnVal = Ok(status);
-
       return rtnVal;
     }
   }

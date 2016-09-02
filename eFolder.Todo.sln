@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Console", "Todo.Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.WebAPI", "Todo.WebAPI\Todo.WebAPI.csproj", "{4680D55B-2590-43EF-BF05-4ADD877DE13E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{75C7ABD0-7871-484B-B773-CC96A37D6AF3}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		nuget.exe = nuget.exe
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.WebAPI.Test", "Todo.WebAPI.Test\Todo.WebAPI.Test.csproj", "{27D0CEEE-490D-4C48-8E2D-09D8CE82A253}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,9 @@ Global
 		{4680D55B-2590-43EF-BF05-4ADD877DE13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4680D55B-2590-43EF-BF05-4ADD877DE13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4680D55B-2590-43EF-BF05-4ADD877DE13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D0CEEE-490D-4C48-8E2D-09D8CE82A253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D0CEEE-490D-4C48-8E2D-09D8CE82A253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D0CEEE-490D-4C48-8E2D-09D8CE82A253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

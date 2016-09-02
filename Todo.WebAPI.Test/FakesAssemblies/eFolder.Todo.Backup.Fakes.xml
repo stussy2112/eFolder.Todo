@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eFolder.Todo.Backup.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimBackup">
+            <summary>Shim type of eFolder.Todo.Backup.Backup</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackup.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackup.#ctor(eFolder.Todo.Backup.Backup)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.DateGet">
+            <summary>Sets the shim of Backup.get_Date()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of Backup.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.IdGet">
+            <summary>Sets the shim of Backup.get_Id()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Backup.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.ItemsGet">
+            <summary>Sets the shim of Backup.get_Items()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.StatusGet">
+            <summary>Sets the shim of Backup.get_Status()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.AllInstances.StatusSetBackupStatus">
+            <summary>Sets the shim of Backup.set_Status(BackupStatus value)</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackup.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackup.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.Constructor">
+            <summary>Sets the shim of Backup.Backup()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.ConstructorInt32DateTimeBackupStatusIEnumerableOfTodoItem">
+            <summary>Sets the shim of Backup.Backup(Int32 id, DateTime date, BackupStatus status, IEnumerable`1&lt;TodoItem&gt; items)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.DateGet">
+            <summary>Sets the shim of Backup.get_Date()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.DateSetDateTime">
+            <summary>Sets the shim of Backup.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.IdGet">
+            <summary>Sets the shim of Backup.get_Id()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.IdSetInt32">
+            <summary>Sets the shim of Backup.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.ItemsGet">
+            <summary>Sets the shim of Backup.get_Items()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.StatusGet">
+            <summary>Sets the shim of Backup.get_Status()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackup.StatusSetBackupStatus">
+            <summary>Sets the shim of Backup.set_Status(BackupStatus value)</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimBackupService">
+            <summary>Shim type of eFolder.Todo.Backup.BackupService</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackupService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackupService.#ctor(eFolder.Todo.Backup.BackupService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimBackupService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.AllInstances.GetAll">
+            <summary>Sets the shim of BackupService.GetAll()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.AllInstances.InitiateAsync">
+            <summary>Sets the shim of BackupService.InitiateAsync()</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackupService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackupService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimBackupService.Bind(eFolder.Todo.Backup.IBackupService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.Constructor">
+            <summary>Sets the shim of BackupService.BackupService()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.GetAll">
+            <summary>Sets the shim of BackupService.GetAll()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimBackupService.InitiateAsync">
+            <summary>Sets the shim of BackupService.InitiateAsync()</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimTodoItem">
+            <summary>Shim type of eFolder.Todo.Backup.TodoItem</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimTodoItem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimTodoItem.#ctor(eFolder.Todo.Backup.TodoItem)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.DoneGet">
+            <summary>Sets the shim of TodoItem.get_Done()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.DoneSetBoolean">
+            <summary>Sets the shim of TodoItem.set_Done(Boolean value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.DueDateGet">
+            <summary>Sets the shim of TodoItem.get_DueDate()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.DueDateSetDateTime">
+            <summary>Sets the shim of TodoItem.set_DueDate(DateTime value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.IdGet">
+            <summary>Sets the shim of TodoItem.get_Id()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TodoItem.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.SubjectGet">
+            <summary>Sets the shim of TodoItem.get_Subject()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.SubjectSetString">
+            <summary>Sets the shim of TodoItem.set_Subject(String value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.UserNameGet">
+            <summary>Sets the shim of TodoItem.get_UserName()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.AllInstances.UserNameSetString">
+            <summary>Sets the shim of TodoItem.set_UserName(String value)</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimTodoItem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.ShimTodoItem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.Constructor">
+            <summary>Sets the shim of TodoItem.TodoItem()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.ConstructorInt32StringStringDateTimeBoolean">
+            <summary>Sets the shim of TodoItem.TodoItem(Int32 id, String userName, String subject, DateTime dueDate, Boolean done)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.DoneGet">
+            <summary>Sets the shim of TodoItem.get_Done()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.DoneSetBoolean">
+            <summary>Sets the shim of TodoItem.set_Done(Boolean value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.DueDateGet">
+            <summary>Sets the shim of TodoItem.get_DueDate()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.DueDateSetDateTime">
+            <summary>Sets the shim of TodoItem.set_DueDate(DateTime value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.IdGet">
+            <summary>Sets the shim of TodoItem.get_Id()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.IdSetInt32">
+            <summary>Sets the shim of TodoItem.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.SubjectGet">
+            <summary>Sets the shim of TodoItem.get_Subject()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.SubjectSetString">
+            <summary>Sets the shim of TodoItem.set_Subject(String value)</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.UserNameGet">
+            <summary>Sets the shim of TodoItem.get_UserName()</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.ShimTodoItem.UserNameSetString">
+            <summary>Sets the shim of TodoItem.set_UserName(String value)</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.StubBackup">
+            <summary>Stub type of eFolder.Todo.Backup.Backup</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubBackup.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubBackup.#ctor(System.Int32,System.DateTime,eFolder.Todo.Backup.BackupStatus,System.Collections.Generic.IEnumerable{eFolder.Todo.Backup.TodoItem})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackup.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubBackup.InitializeStub">
+            <summary>Initializes a new instance of type StubBackup</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackup.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackup.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.StubBackupService">
+            <summary>Stub type of eFolder.Todo.Backup.BackupService</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubBackupService.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackupService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubBackupService.InitializeStub">
+            <summary>Initializes a new instance of type StubBackupService</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackupService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubBackupService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.StubIBackupService">
+            <summary>Stub type of eFolder.Todo.Backup.IBackupService</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubIBackupService.#ctor">
+            <summary>Initializes a new instance of type StubIBackupService</summary>
+        </member>
+        <member name="F:eFolder.Todo.Backup.Fakes.StubIBackupService.GetAll">
+            <summary>Sets the stub of IBackupService.GetAll()</summary>
+        </member>
+        <member name="F:eFolder.Todo.Backup.Fakes.StubIBackupService.InitiateAsync">
+            <summary>Sets the stub of IBackupService.InitiateAsync()</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubIBackupService.eFolder#Todo#Backup#IBackupService#GetAll">
+            <summary>Sets the stub of IBackupService.GetAll()</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubIBackupService.eFolder#Todo#Backup#IBackupService#InitiateAsync">
+            <summary>Sets the stub of IBackupService.InitiateAsync()</summary>
+        </member>
+        <member name="T:eFolder.Todo.Backup.Fakes.StubTodoItem">
+            <summary>Stub type of eFolder.Todo.Backup.TodoItem</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubTodoItem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubTodoItem.#ctor(System.Int32,System.String,System.String,System.DateTime,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubTodoItem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:eFolder.Todo.Backup.Fakes.StubTodoItem.InitializeStub">
+            <summary>Initializes a new instance of type StubTodoItem</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubTodoItem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:eFolder.Todo.Backup.Fakes.StubTodoItem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,4 @@
+D:\Building\source\Todo.WebAPI.Test\Fakes\eFolder.Todo.Backup.fakes : warning : Cannot generate stub for eFolder.Todo.Backup.BackupStatus: type is a value type.
+D:\Building\source\Todo.WebAPI.Test\Fakes\eFolder.Todo.Backup.fakes : warning : Cannot generate shim for eFolder.Todo.Backup.BackupStatus: type is an enum.
+D:\Building\source\Todo.WebAPI.Test\Fakes\eFolder.Todo.Backup.fakes : warning : Cannot generate shim for eFolder.Todo.Backup.BackupService+<InitiateAsync>d__2: type is not supported because of internal limitations.
+D:\Building\source\Todo.WebAPI.Test\Fakes\eFolder.Todo.Backup.fakes : warning : Cannot generate shim for eFolder.Todo.Backup.IBackupService: type is an interface.

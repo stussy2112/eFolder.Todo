@@ -19,7 +19,7 @@ namespace eFolder.Todo.Console
 
       try
       {
-        System.Console.WriteLine("Started...");
+        System.Console.WriteLine("Started server. Listening at {0}...", baseAddress);
         System.Console.WriteLine("Press any key to stop server...");
         System.Console.ReadKey();
       }
